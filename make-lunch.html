@@ -99,6 +99,103 @@
                 </div>
             </div>
         </section>
+        <section class="order-form">
+            <h1>Сделать заказ</h1>
+
+            <form action="https://httpbun.com/post" method="POST">
+
+                <div class="form-grid">
+                <div class="order-section">
+                    <h3>Ваш заказ</h3>
+                    <div class="form-group">
+                        <label for="dish">Главное блюдо</label>
+                        <select id="dish" name="dish">
+                            <option value="" selected>-- Выберите блюдо --</option>
+                            <option value="andrew">Сет роллов "Эндрю ин дрэг"</option>
+                            <option value="vityai">Макароны с курицей "Витяй"</option>
+                            <option value="kriperi">Онигири "Криперы"</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dessert">Десерты</label>
+                        <select id="dessert" name="dessert">
+                            <option value="" selected>-- Выберите десерт --</option>
+                            <option value="n&n">Бенто-торт "Настикс-да-Никитикс"</option>
+                            <option value="stvorozhenki">ПП-обед "Створоженки"</option>
+                            <option value="kvakinki">Пирожные "Квакинки"</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="beverage">Напиток</label>
+                        <select id="beverage" name="beverage">
+                            <option value="" selected>-- Выберите напиток --</option>
+                            <option value="icebaby">Аиз-бейби</option>
+                            <option value="chai">Иван-чай "Ваня-чай"</option>
+                            <option value="venok">Горячий розовый шоколад "Венок"</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Комментарии к заказу</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="customer-section">
+                    <h3>Ваши данные</h3>
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Получать информацию о скидках и акциях</label>
+                    </div>
+
+                    <!-- Телефон -->
+                    <div class="form-group">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <!-- Адрес -->
+                    <div class="form-group">
+                        <label for="address">Адрес доставки</label>
+                        <input type="text" id="address" name="address" required>
+                        <p class="note">Доставка осуществляется только по Москве</p>
+                    </div>
+
+                    <!-- Время доставки -->
+                    <div class="form-group">
+                        <label>Время доставки:</label>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="as_soon_as_possible" name="delivery_time_option" value="as_soon_as_possible" required>
+                                <label for="as_soon_as_possible">Как можно скорее</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="specified_time" name="delivery_time_option" value="specified_time">
+                                <label for="specified_time">К указанному времени</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery_time">Укажите время доставки</label>
+                        <input type="time" id="delivery_time" name="delivery_time" min="07:00" max="23:00" step="60">
+                        <p class="note">Доступное время доставки с 7:00 до 23:00</p>
+                    </div>
+                    <div class="button-group">
+                        <button type="reset">Сбросить</button>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </div>
+                </div>
+
+            </form>
+        </section>
     </main>  
     <footer id="contacts">
       <h2>Контакты</h2>
