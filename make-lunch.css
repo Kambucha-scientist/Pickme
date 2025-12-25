@@ -106,6 +106,7 @@
     color: #333;
 }
 
+
 .form-group select,
 .form-group input[type="text"],
 .form-group input[type="email"],
@@ -184,6 +185,17 @@
     background-color: #555;
 }
 
+#nothing {
+    color: #ff4498;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#cost {
+    color: #ff4498;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
 @media (max-width: 1024px) {
   .dishes-grid {
