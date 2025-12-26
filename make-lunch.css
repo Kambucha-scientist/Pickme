@@ -1,3 +1,5 @@
+
+
 .dishes-grid {
     display: grid;  
     grid-template-columns: repeat(3, 1fr);
@@ -221,6 +223,104 @@
 .filters button.active {
     background-color: #ff4498;
     color: white;
+}
+
+#combo-head {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.combo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .combo-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.combo-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+    position: relative;
+    min-height: 270px;
+}
+
+/* Делаем треугольник через CSS Grid */
+.combo-box {
+    display: grid;
+    grid-template-areas:
+        "top top top"
+        "left . right";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 50px 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Позиционируем элементы в сетке */
+.combo-item:nth-child(1) {
+    grid-area: top;
+}
+
+.combo-item:nth-child(2) {
+    grid-area: left;
+}
+
+.combo-item:nth-child(3) {
+    grid-area: right;
+}
+
+.combo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+}
+
+.combo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.combo-img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+
+.combo-label {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 200px;
 }
 
 @media (max-width: 1024px) {

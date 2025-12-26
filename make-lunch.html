@@ -21,7 +21,57 @@
       </nav>
     </header>
     <main>
-         <section class="category">
+        <h2 id="combo-head">Доступные для заказа комбо</h2>
+        <div class="combo-container">
+            <!-- Комбо 1: Основное блюдо + Салат + Напиток -->
+            <div class="combo-box">
+                <div class="combo-item">
+                    <img src="images/dish.png" alt="Основное блюдо" class="combo-img">
+                    <span class="combo-label">Основное блюдо</span>
+                </div>
+                <div class="combo-item">
+                    <img src="images/salad.png" alt="Салат" class="combo-img">
+                    <span class="combo-label">Салат</span>
+                </div>
+                <div class="combo-item">
+                    <img src="images/drink.png" alt="Напиток" class="combo-img">
+                    <span class="combo-label">Напиток</span>
+                </div>
+            </div>
+            
+            <!-- Комбо 2: Основное блюдо + Десерт + Напиток -->
+            <div class="combo-box">
+                <div class="combo-item">
+                    <img src="images/dish.png" alt="Основное блюдо" class="combo-img">
+                    <span class="combo-label">Основное блюдо</span>
+                </div>
+                <div class="combo-item">
+                    <img src="images/desert.png" alt="Десерт" class="combo-img">
+                    <span class="combo-label">Десерт</span>
+                </div>
+                <div class="combo-item">
+                    <img src="images/drink.png" alt="Напиток" class="combo-img">
+                    <span class="combo-label">Напиток</span>
+                </div>
+            </div>
+            
+            <!-- Комбо 3: Основное блюдо + Десерт + Салат -->
+            <div class="combo-box">
+                <div class="combo-item">
+                    <img src="images/dish.png" alt="Основное блюдо" class="combo-img">
+                    <span class="combo-label">Основное блюдо</span>
+                </div>
+                <div class="combo-item">
+                    <img src="images/desert.png" alt="Десерт" class="combo-img">
+                    <span class="combo-label">Десерт</span>
+                </div>
+                <div class="combo-item">
+                    <img src="images/salad.png" alt="Салат" class="combo-img">
+                    <span class="combo-label">Салат</span>
+                </div>
+            </div>
+        </div>
+        <section class="category">
             <h2>Основные блюда</h2>
             <div class="dishes-grid"></div>
         </section>
@@ -137,5 +187,6 @@
     <script src="dishes.js"></script>
     <script src="displayDishes.js"></script>
     <script src="orderManager.js"></script>
+    <script src="validator.js"></script>
 </body>
 </html>
