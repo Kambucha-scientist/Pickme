@@ -1,6 +1,7 @@
 // Объект для хранения текущего заказа
 let currentOrder = {
     main: null,
+    starter: null,
     dessert: null,
     beverage: null
 };
@@ -90,6 +91,7 @@ function updateOrderDisplay() {
 function getCategoryName(category) {
     switch(category) {
         case 'main': return 'Основное блюдо';
+        case 'starter': return 'Салат или стартер';
         case 'dessert': return 'Десерт';
         case 'beverage': return 'Напиток';
         default: return '';
@@ -99,6 +101,7 @@ function getCategoryName(category) {
 function getPlaceholderText(category) {
     switch(category) {
         case 'main': return 'Не выбрано';
+        case 'starter': return 'Не выбрано';
         case 'dessert': return 'Не выбрано';
         case 'beverage': return 'Не выбрано';
         default: return '';

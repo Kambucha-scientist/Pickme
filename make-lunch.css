@@ -197,6 +197,32 @@
     margin-bottom: 10px;
 }
 
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    background-color: #f1eee9;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filters button:hover {
+    background-color: #d3d1cb;
+}
+
+.filters button.active {
+    background-color: #ff4498;
+    color: white;
+}
+
 @media (max-width: 1024px) {
   .dishes-grid {
     grid-template-columns: repeat(2, 1fr);
